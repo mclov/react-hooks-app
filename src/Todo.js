@@ -1,0 +1,15 @@
+import React from 'react';
+import ListItem from '@material-ui/core/ListItem';
+import ListItemText from '@material-ui/core/ListItem';
+import Checkbox from '@material-ui/core/Checkbox';
+
+export default function Todo({ task, completed }) {
+  return (
+    <ListItem>
+      <Checkbox tabIndex={-1} checked={completed} />
+      <ListItemText>
+        {task}
+      </ListItemText>
+    </ListItem>
+  )
+}
