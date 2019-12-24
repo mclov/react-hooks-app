@@ -9,7 +9,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Grid from '@material-ui/core/Grid';
 
 export default function TodoApp() {
-  const initialTodos = [{ id: 1, task: "Pet a monkey", completed: false }];
+  const initialTodos = [];
   const { todos, addTodo, removeTodo, toggleTodo, editTodo } = useTodoState(initialTodos);
 
 
